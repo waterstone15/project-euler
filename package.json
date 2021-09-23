@@ -5,5 +5,8 @@
   "repository": "git@github.com:waterstone15/project-euler.git",
   "author": "Brian Waterstone <code@waterstone15.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "coffeescript": "^2.6.0"
+  }
 }
