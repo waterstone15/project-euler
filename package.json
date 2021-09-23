@@ -1,0 +1,9 @@
+{
+  "name": "project-euler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:waterstone15/project-euler.git",
+  "author": "Brian Waterstone <code@waterstone15.com>",
+  "license": "MIT",
+  "private": true
+}
