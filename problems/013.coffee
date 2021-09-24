@@ -1,8 +1,6 @@
 # Work out the first ten digits of the sum of the following one-hundred 50-digit numbers.
 
 reduce       = require('lodash/reduce')
-toInteger    = require('lodash/toInteger')
-toString     = require('lodash/toString')
 { DateTime } = require('luxon')
 
 
