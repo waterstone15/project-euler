@@ -1,5 +1,4 @@
-_            = require('lodash')
-{ DateTime } = require('luxon')
+_ = require('lodash')
 
 cache = {}
 
@@ -19,17 +18,12 @@ collatz = (start) ->
   return seq
 
 (->
-  start_time = DateTime.local().setZone('utc')
-
   longest = _.reduce([1..1000000], (acc, num) ->
     res = collatz(num)
     if res.length > acc.length then { start: num, length: res.length } else acc
   , { start: 1, length: 1 })
 
   console.log longest
-
-  end_time = DateTime.local().setZone('utc')
-  console.log end_time.diff(start_time).toObject()
   return
 )()
 

@@ -1,11 +1,7 @@
-max          = require('lodash/max')
-reduce       = require('lodash/reduce')
-{ DateTime } = require('luxon')
-
+max    = require('lodash/max')
+reduce = require('lodash/reduce')
 
 (->
-  start = DateTime.local().setZone('utc')
-
   grid = [
     [ 8, 2, 22, 97, 38, 15, 0, 40, 0, 75, 4, 5, 7, 78, 52, 12, 50, 77, 91, 8 ]
     [ 49, 49, 99, 40, 17, 81, 18, 57, 60, 87, 17, 40, 98, 43, 69, 48, 4, 56, 62, 0 ]
@@ -42,9 +38,6 @@ reduce       = require('lodash/reduce')
       largest = max(products)
 
   console.log largest
-
-  end = DateTime.local().setZone('utc')
-  console.log end.diff(start).toObject()
   return
 )()
 

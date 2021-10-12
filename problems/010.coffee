@@ -1,10 +1,7 @@
-_            = require('lodash')
-map          = require('lodash/map')
-{ DateTime } = require('luxon')
+_   = require('lodash')
+map = require('lodash/map')
 
 (->
-  start = DateTime.local().setZone('utc')
-
   max = 2000000
   max_factor = Math.ceil(Math.sqrt(max))
 
@@ -24,9 +21,6 @@ map          = require('lodash/map')
   , 0)
 
   console.log sum
-
-  end = DateTime.local().setZone('utc')
-  console.log end.diff(start).toObject()
   return
 )()
 

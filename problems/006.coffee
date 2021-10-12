@@ -1,8 +1,8 @@
-add      = require('lodash/add')
-map      = require('lodash/map')
-reduce   = require('lodash/reduce')
+add    = require('lodash/add')
+map    = require('lodash/map')
+reduce = require('lodash/reduce')
 
-square   = (a) -> a * a
+square = (a) -> a * a
 
 (->
   range = [1..100]

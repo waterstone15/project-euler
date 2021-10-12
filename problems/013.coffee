@@ -1,8 +1,6 @@
-reduce       = require('lodash/reduce')
-{ DateTime } = require('luxon')
+reduce = require('lodash/reduce')
 
 (->
-  start = DateTime.local().setZone('utc')
 
   numbers_str = [
     37107287533902102798797998220837590246510135740250n
@@ -110,8 +108,6 @@ reduce       = require('lodash/reduce')
   console.log sum
   console.log sum.toString()[...10]
 
-  end = DateTime.local().setZone('utc')
-  console.log end.diff(start).toObject()
   return
 )()
 

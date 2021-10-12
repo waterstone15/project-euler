@@ -1,6 +1,4 @@
-_            = require('lodash')
-map          = require('lodash/map')
-{ DateTime } = require('luxon')
+_ = require('lodash')
 
 divisors = (number) ->
   ds = []
@@ -10,8 +8,6 @@ divisors = (number) ->
 
 
 (->
-  start = DateTime.local().setZone('utc')
-
   triangle = 0
   natural = 1
 
@@ -23,8 +19,6 @@ divisors = (number) ->
       console.log natural, triangle, ds.length
       break
 
-  end = DateTime.local().setZone('utc')
-  console.log end.diff(start).toObject()
   return
 )()
 
